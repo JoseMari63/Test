@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>PresupuestoPlus</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Presupuesto facturación">
+        <meta name="author" content="DienSoft"> 
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+        <!-- FontAwesome JS-->
+        <script defer src="assets/fontawesome/js/all.min.js"></script>
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+        <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+        <!-- Theme CSS -->         
+        <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap">
+        <link href="site.css" rel="stylesheet" type="text/css">
+    </head>     
+    <body class="docs-page"> 
+        <header class="header fixed-top"> 
+            <div class="branding docs-branding" style="background-color: #f7d8d8;">
+                <div class="container-fluid position-relative py-2">
+                    <div class="docs-logo-wrapper">
+                        <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="site-logo">
+                            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/DienSoftLogo.png" alt="logo" width="60" height="60"><span class="logo-text"><span class="text-alt"><b>DienSoft</b></span></span></a>
+                        </div>                         
+                    </div>
+                    <!--//docs-logo-wrapper-->
+                    <div class="docs-top-utilities d-flex justify-content-end align-items-center" style="line-height: 25px;">
+                        <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+</ul>
+                        <!--//social-list-->
+                        <div class="text-center col mt-2" style="color: blue; font-size: 55px;">
+                            Manual del Usuario de Presupuesto Plus                     
+</div>
+                    </div>
+                    <!--//docs-top-utilities-->
+                </div>
+                <!--//container-->
+            </div>
+            <!--//branding-->
+        </header>
+        <!--//header-->
+        <div class="docs-wrapper">
+            <div id="docs-sidebar" class="docs-sidebar">
+                <div class="top-search-box d-lg-none p-3">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                        <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <nav id="docs-nav" class="docs-nav navbar" style="background-color: #73d7a3;">
+                    <ul class="section-items list-unstyled nav flex-column pb-3">
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-signs-post" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signs-post" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M223.1 32C223.1 14.33 238.3 0 255.1 0C273.7 0 288 14.33 288 32H441.4C445.6 32 449.7 33.69 452.7 36.69L500.7 84.69C506.9 90.93 506.9 101.1 500.7 107.3L452.7 155.3C449.7 158.3 445.6 160 441.4 160H63.1C46.33 160 31.1 145.7 31.1 128V64C31.1 46.33 46.33 32 63.1 32L223.1 32zM480 320C480 337.7 465.7 352 448 352H70.63C66.38 352 62.31 350.3 59.31 347.3L11.31 299.3C5.065 293.1 5.065 282.9 11.31 276.7L59.31 228.7C62.31 225.7 66.38 223.1 70.63 223.1H223.1V191.1H288V223.1H448C465.7 223.1 480 238.3 480 255.1V320zM255.1 512C238.3 512 223.1 497.7 223.1 480V384H288V480C288 497.7 273.7 512 255.1 512z"></path>
+                                    </svg><!-- <i class="fas fa-map-signs"></i> Font Awesome fontawesome.com --></span>Introducción</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-1-funcionalidades">Funcionalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-1-inicio-sesion">Inicio de sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-1-panel-control">Página de inicio</a>
+                        </li>
+                        <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Instalación</a>
+                        </li>
+                        <li class="nav-item">
+</li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-2-instalador">Instalador</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-2-superusuario">Superusuario</a>
+                        </li>
+                        <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-server"></i></span>Servidor</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion">Configuración</a>
+                            <ul style="list-style-type: none">
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-empresa">Empresa</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-correo">Correo</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-impresora">Impresoras</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-categoria">Categorías</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-plantilla">Plantillas</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-respaldo">Respaldo</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-actualizacion">Actualización</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-configuracion-licencia">Licencia</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-usuarios">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-limpieza">Limpieza Base Datos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-clientes">Clientes</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-3-proveedores">Proveedores</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-3-gremios">Gremios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-proyectos">Proyectos</a>
+                            <ul style="list-style-type: none">
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-proyectos-presupuestos">Presupuestos</a> 
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-proyectos-documentos">Documentos</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link scrollto" href="#item-3-proyectos-facturas">Facturas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-calendario">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-cobros">Cobros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#item-3-facturacion">Facturación</a>
+                        </li>
+                        <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-desktop"></i></span>Programa Cliente</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-4-servidor">En equipo Servidor</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#item-4-cliente">En equipo Cliente</a>
+                        </li>
+                        <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>Preguntas más frecuentes</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--//docs-nav-->
+            </div>
+            <!--//docs-sidebar-->
+            <div class="docs-content">
+                <div class="container">
+                    <article class="docs-article" id="section-1">
+                        <header class="docs-header">
+                            <h1 class="docs-heading text-center">Introducción <span class="docs-time">Última actualización: 15/05/2023</span></h1>
+                            <section class="docs-intro">
+                                <p style="font-family: 'ABeeZee', sans-serif; font-size: 25px; line-height: 45px;">¿Qué es PresupuestoPlus?</p>
+                                <p>PresupuestoPlus es una aplicación web que se instala directamente en las oficinas del cliente a través del instalador suministrado. </p>
+                                <p>Es una aplicación cliente/servidor especializada en los negocios que gestionen gremios como tiendas de decoración, obras, etc. pero también se pueden añadir al presupuesto productos propios que tuviera dicho negocio.</p>
+                                <p>Se puede usar libremente durante el periodo de pruebas de 15 días. Una vez finalizado dicho periodo dejará de funcionar y se deberá contactar con DienSoft para que se le suministre la licencia una vez efectuado el pago según la licencia elegida.</p>
+                            </section>
+                            <!--//docs-intro-->
+                            <!--//docs-code-block-->
+                        </header>
+                        <section class="docs-section" id="item-1-funcionalidades">
+                            <h2 class="section-heading">Funcionalidades de la aplicación</h2>
+                            <ul class="no-bullets"> 
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i>
+                                    Gestión de usuarios, presupuesto, facturas, documentos, correos, respaldo de la base de datos y documentos, así como de las actualizaciones.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i>
+                                    Gestión de clientes y proyectos.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i> 
+                                    Gestión de gremios y productos.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i> 
+                                    Creación y gestión de presupuestos.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i> 
+                                    Asociación de documentos al proyecto.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i> 
+                                    Gestión de facturas.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i> 
+                                    Lectura y envío de correos.
+                                </li>
+                                <li style="font-family: 'ABeeZee', sans-serif; font-size: 20px;"><i class="fas fa-check" aria-hidden="true"/></i> 
+                                    Gestión de calendario.
+                                </li>
+                            </ul>
+                            <ol>
+</ol>
+                            <!--//callout-block-->
+                            <div class="callout-block callout-block-warning">
+                                <div class="content">
+                                    <h4 class="callout-title"> <span class="callout-icon-holder me-1"> <i class="fas fa-bullhorn"></i> </span><!--//icon-holder-->
+	                                Aviso </h4>
+                                    <p>PresupuestoPlus es un Software que se instala en máquinas con el Sistema Operativo Windows. No es compatible con Linux o Mac.</p>
+                                </div>
+                                <!--//content-->
+                            </div>
+                            <!--//callout-block-->
+                            <!--//callout-block-->
+                            <!--//callout-block-->
+                        </section>
+                        <!--//section-->
+                        <section class="docs-section" id="item-1-inicio-sesion">
+                            <h2 class="section-heading">Inicio sesión</h2>
+                            <p>Para acceder a la aplicación se necesita un explorador Web como Chrome. Hay dos formas de acceder: <li>
+                                    <b>Diréctamente</b>:&nbsp; Abriendo Chrome y escribiendo el nombre de la máquina del servidor o localhost si se esta en el equipo del servidor.
+                                </li> <li>Usando el programa <b>Cliente</b>. <a href="#section-4">Ver Cliente</a>.
+                                </li></p>
+                            <p> Inmediatamente aparecerá la pantalla de Inicio de sesión como aparece en la imagen siguiente:</p>
+                            <img class="figure-img img-fluid shadow rounded mt-3" src="assets/images/login.png" alt="inicio de sesión" title="inicio de sesión"/>
+                            <!--//gallery-->
+                            <!--//table-responsive-->
+                            <!--//table-responsive-->
+                            <!--//table-responsive-->
+                        </section>
+                        <section class="docs-section" id="item-1-panel-control">
+                            <h2 class="section-heading">Página de inicio</h2>
+                            <p>Despues de hacer el inicio de sesión aparece la siguiente pantalla con la página de inicio donde se indica algunas estadisticas de usuarios,clientes y proyectos actuales como con los nuevos clientes y proyectos durante el presente ejercicio. En la gráfica inferior se mostrará la facturación actual comparada con la del año anterior.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/dashboard.png" alt="Página de inicio" title="Página de inicio"/>
+                            <!--//gallery-->
+                            <!--//table-responsive-->
+                            <!--//table-responsive-->
+                            <!--//table-responsive-->
+                        </section>
+                        <!--//section-->
+                        <!--//section-->
+                        <!--//section-->
+                        <!--//section-->
+                        <!--//section-->
+                    </article>
+                    <article class="docs-article" id="section-2">
+                        <header class="docs-header">
+                            <h1 class="docs-heading text-center">Instalación</h1>
+                            <section class="docs-section" id="item-2-instalador">
+                                <h2 class="section-heading">Instalador</h2>
+                                <p>La instalación del programa se realiza de forma sencilla con un instalador. Solo hay que tener en cuenta los<a href="index.html#requisitos"> requisitos</a>.</p>
+                                <p>Lo primero que hay que hacer es descargar el instalador que se encuentra en <a href="index.html#descarga">Setup&nbsp;</a>.Cuando se descargue vaya a la carpeta de descarga y ejecute la el instalador. Debido a que el instalador no está registrado le saldrá el SmartScreen de Microsoft. Siga lo que se muestra en la animación para ejecutar el instalador.</p>
+                                <img class="figure-img img-fluid rounded shadow" src="assets/images/instalacion/Instalacion-ejecutar.gif" alt="Instalación PresupuestoPlus">
+                                <p> Seguir los pasos según el tipo de Software a instalar:&nbsp;<b>servidor </b>o <b>cliente</b>.</p>
+                                <div class="text-center">
+                                    <video class="figure-img img-fluid shadow rounded" src="assets/images/instalacion/Instalacion-presupuestoplus.mp4" controls type="video/mp4">Your browser doesn't support HTML5 video tag.</video>
+                                </div>
+                            </section>
+                            <section class="docs-intro">
+                                <div class="callout-block callout-block-danger me-1">
+                                    <div class="content">
+                                        <h4 class="callout-title" style="font-size: 24px;"> <span class="callout-icon-holder"> <i class="fas fa-exclamation-triangle"></i> </span><!--//icon-holder-->
+	                                Atención </h4>
+                                        <p style="background-color: #e7d2d2;"><b>Tenga en cuenta que si dispone de un antivirus tendrá que dar permiso al instalador y al software instalado ya que hace uso de comunicaciones de Internet.<br>
+                                        Puede también hacer una exclusión de la carpeta en donde se realiza la instalación. </b></p>
+                                    </div>
+                                    <!--//content-->
+                                </div>                                 
+                                <div class="text-center" id="item-2-instalador">
+</div>
+                            </section>
+                            <!--//docs-intro-->
+                        </header>
+                        <section class="docs-section" id="item-2-superusuario">
+                            <h2 class="section-heading">Superusuario</h2>
+                            <p>El Superusuario es un usuario que es administrado de la aplicación. No sirver para realizar presupuestos, facturación, etc. Las tareas que puede realizar son:</p>
+                            <p><li><b>Configuración</b>:&nbsp; Permite realizar la configuración de los distintos apartados como empresa, correo, impresora, plantillas,etc . Ver configuración mas adelante.
+                                </li><li><b>Usuarios&nbsp;</b>:&nbsp; Permite dar de alta los usuarios y los roles que van a usar el aplicativo.
+                                </li><li><b>Limpieza Base Datos</b>:&nbsp; Con los años se van añadiendo cada vez mas informacion a la base de datos. En la configuración se debe especificar el nº de años que puede estar la información disponible hasta un maximo de 5 años. Transcurrido ese periodo configurado habría que ir a esta opcion para realziar la limpieza pertinente.
+                                </li></p>
+                        </section>
+                        <div class="callout-block callout-block-danger me-1">
+                            <div class="content">
+                                <h4 class="callout-title"> <span class="callout-icon-holder"> <i class="fas fa-exclamation-triangle"></i> </span><!--//icon-holder-->
+	                                Atención </h4>
+                                <p>Guarde la clave del supuerusuario para pode acceder al aplicativo. Posteriormente puede añadir mas superusuarios si es necesario.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-->
+                        <!--//section-->
+                        <!--//section-->
+                    </article>
+                    <!--//docs-article-->
+                    <article class="docs-article" id="section-3">
+                        <header class="docs-header">
+                            <h1 class="docs-heading text-center">Servidor</h1>
+                            <section class="docs-intro">
+                                <p>En esta sección se explicará&nbsp; la configuración inicial del Servidor y los distintos modulos disponibles.</p>
+                            </section>
+                            <!--//docs-intro-->
+                        </header>
+                        <section class="docs-section" id="item-3-configuracion">
+                            <h2 class="section-heading">Configuración</h2>
+                            <p>Cuando se inicia la aplicación la primera vez no existe configuración y aparece la siguiente pantalla:</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion.png" alt="Configuración PresupuestoPlus">
+                            <p>Debe ir a la opción de configuración en el menu de la izquierda. Lo primero que aparece es la configuración de los datos de la empresa que se muestra a continuación.</p>
+                            <div class="callout-block callout-block-info">
+                                <div class="content">
+                                    <h4 class="callout-title"> <span class="callout-icon-holder me-1"> <i class="fas fa-info-circle"></i> </span><!--//icon-holder-->
+	                                Nota </h4>
+                                    <p>Esta opción solo está disponible para el <b>SuperUsuario </b>que se establece en el momento de la instalación.</p>
+                                </div>
+                                <!--//content-->
+                            </div>
+                        </section>
+                        <!--//section-->
+                        <section class="docs-section" id="item-3-configuracion-empresa">
+                            <h2 class="section-heading">Empresa</h2>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-empresa.png" alt="Configuración de los datos de la empresa">
+                            <p>Los datos a introducir son claros. Comentar que cada vez que se realiza un cambio en la configuración hay que pulsar el botón de <b>&apos;Guardar Configuración&apos; </b>para aceptar los cambios o &apos;<b>Cancelar</b>&apos; para desecharlos.</p>
+                        </section>
+                        <!--//section-->
+                        <section class="docs-section" id="item-3-configuracion-correo">
+                            <h2 class="section-heading">Correo</h2>
+                            <p>En esta pestaña se configura el correo de la empresa. Introduzca los datos correctos y pregunte a su proveedor de Internet si no los conoce</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-correo.png" alt="Configuración del correo de la empresa">
+                        </section>
+                        <section class="docs-section" id="item-3-configuracion-impresora">
+                            <h2 class="section-heading">Impresoras</h2>
+                            <p>En esta pestaña se configura la impresora por la que se quiere imprimir sus documentos.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-impresora.png" alt="Configuración de la impresora">
+                        </section>
+                        <section class="docs-section" id="item-3-configuracion-categoria">
+                            <h2 class="section-heading">Categorías</h2>
+                            <p>En esta pestaña se configura las categorías con las que trabaja la empresa y que permite agrupar las lineas de presupuestos y facturas en categorías.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-categorias.png" alt="Configuración de las Categorías de la empresa">
+                        </section>
+                        <section class="docs-section" id="item-3-configuracion-plantilla">
+                            <h2 class="section-heading">Plantillas</h2>
+                            <p>En esta pestaña se configura las plantillas en Word de los documentos de presupuestos y facturas. Es totalmente configurable por medio de los campos definidos para cada plantilla tal y como se muestra en la siguiente imagen:</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-plantillas-word.png" alt="Configuración de las plantillas de presupuesto, facturación">
+                            <p>Se puede descargar ejemplos básicos de las plantillas para tener una base de cómo configurar los documentos.</p>
+                            <p>Si se baja mas abajo se configura las distintas plantillas de correo tal y como se muestra en la siguiente imagen:</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-plantillas-correo.png" alt="Configuración de las plantillas de correo electrónico">
+                        </section>
+                        <section class="docs-section" id="item-3-configuracion-respaldo">
+                            <h2 class="section-heading">Respaldo</h2>
+                            <p>En esta pestaña permite la configuración del respaldo de la base de datos y de los documentos manejados en la aplicación. Para ello se debe indicar el volumen donde se quiere almacenar la información. Tambien se puede indicar un equipo remoto que se configura con el cliente que se suministra con este aplicativo. <a href="#item-4-cliente"> Ver Cliente.</a></p>
+                            <p>El <b>periodo </b>se puede configurar para que no se realice el respaldo lo cual no es aconsejable. Cada día, cada semana o cada mes. Configure cada día si tiene mucho trabajo diario.</p>
+                            <p>Como se obserba en la imagen de abajo se puede configurar ademas los años que se requieren que la información esté vigente en la base de datos.<br>Está limitada a un máximo de 5 años.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-respaldo.png" alt="Configuración del respaldo o backup">
+                        </section>
+                        <section class="docs-section" id="item-3-configuracion-actualizacion">
+                            <h2 class="section-heading">Actualización</h2>
+                            <p>Configure la actualización para no realizarla lo cual no es aconsejable. Cuando haya algun paquete de actualización o solo informar de la misma.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-actualizacion.png" alt="Configuración de la actualización">
+                        </section>
+                        <section class="docs-section" id="item-3-configuracion-licencia">
+                            <h2 class="section-heading">Licencia</h2>
+                            <p>En esta pestaña se la validez de la licencia y permite subir la licencia que le envia DienSoft de acuerdo a la licencia contratada. La versión de prueba solo dispone de 15 días.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/configuracion-licencia.png" alt="Configuración de la licencia">
+                        </section>
+                        <section class="docs-section" id="item-3-usuarios">
+                            <h2 class="section-heading">Usuarios</h2>
+                            <p>En esta opción se configuran los usuarios y sus roles que van a usar la aplicación. Tambien es importante añadir la direccion de correo electrónico para poder recibir y enviar correos.</p>
+                            <p>Hay 3 tipos de roles en la aplicación: <ul>
+                                    <li>
+                                        <b>Normal</b>: Es un usuario que solo puede acceder a los clientes y proyectos, presupuesto,facturas,etc por él creados. Es decir, trabaja aisladamente del resto de usuarios.
+                                    </li>
+                                    <li>
+                                        <b>Admin</b>: Este usuario puede acceder a todos los clientes,proyectos,presupuestos,etc de todos los usuarios.
+                                    </li>
+                                    <li>
+                                        <b>Superuser</b>: Este usuarios sirver para realizar las configuraciones del aplicativo.
+                                    </li>
+                                </ul></p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/usuarios.png" alt="Permite introducir,modificar,borrar los usuarios del aplicativo">
+                            <p></p>
+                            <p>El botón de <b style="color: #d1a931;">añadir usuario</b> permitirá añadir un usuario a la lista. No podrá superar a los usuarios licenciados.<br>El icono del lapiz sirve para editar los datos del usuario una vez creado y el de la cesta de basura para borrar el usuario.</p>
+                            <div class="callout-block callout-block-info">
+                                <div class="content">
+                                    <h4 class="callout-title"> <span class="callout-icon-holder me-1"> <i class="fas fa-info-circle"></i> </span><!--//icon-holder-->
+	                                Nota </h4>
+                                    <p>Esta opción solo está disponible para el <b>SuperUsuario </b>que se establece en el momento de la instalación.</p>
+                                </div>
+                                <!--//content-->
+                            </div>
+                        </section>
+                        <section class="docs-section" id="item-3-limpieza">
+                            <h2 class="section-heading">Limpieza de la Base de Datos</h2>
+                            <p>Según la configuración de del periodo de retencion de los datos (5 años máximo) se podrá realizar la limpieza de la base de datos en el que se indicará los proyectos, documentos y clientes que se van a borrar si superan en fecha el periodo configurado.&nbsp;</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/configuracion/limpieza.png" alt="Limpieza de la base de datos y la documentación transcurridos los años configurados">
+                            <div class="callout-block callout-block-info">
+                                <div class="content">
+                                    <h4 class="callout-title"> <span class="callout-icon-holder me-1"> <i class="fas fa-info-circle"></i> </span><!--//icon-holder-->
+	                                Nota </h4>
+                                    <p>Esta opción solo está disponible para el <b>SuperUsuario </b>que se establece en el momento de la instalación.</p>
+                                </div>
+                                <!--//content-->
+                            </div>
+                        </section>
+                        <section class="docs-section" id="item-3-clientes">
+                            <h2 class="section-heading">Clientes</h2>
+                            <p>Este modulo permite gestionar todos los clientes de la empresa. La información de correo es opcional pero la del telefono es obligatoria para poder comunicarte con el mismo.</p>
+                            <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-cliente.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                        </section>
+                        <div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title"> <span class="callout-icon-holder me-1"> <i class="fas fa-thumbs-up"></i> </span><!--//icon-holder-->
+	                                Consejo </h4>
+                                <p>Lo primero que debe hacer para trabajar con el aplicativo es crear el cliente cuando le pide que realice un presupuesto por alguna obra o compra de productos. Despues tendrá que crear el proyecto y asociarle el cliente que le ha solicitado el presupuesto.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <section class="docs-section" id="item-3-proveedores">
+                            <h2 class="section-heading">Proveedores</h2>
+                            <p>Este modulo permite gestionar todos los clientes de la empresa. La información de correo es opcional pero la del teléfono es obligatoria para poder comunicarse con el mismo.</p>
+                            <p>El icono resaltado permite acceder a la web del proveedor directamente.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-proveedor.png" alt="Introducción de los proveedores">
+                        </section>
+                        <section class="docs-section" id="item-3-gremios">
+                            <h2 class="section-heading">Gremios</h2>
+                            <p>Este modulo permite gestionar todos los gremios de la empresa. La información de correo es opcional pero la del teléfono es obligatoria para poder comunicarse con el mismo.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-gremios.png" alt="Introducción de los gremios">
+                            <p>El campo de categorías sirve para seleccionar la categoría de obras a la que pertenece.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-gremios-categoria.png" alt="Modificación de los gremios">
+                        </section>
+                        <section class="docs-section" id="item-3-productos">
+                            <h2 class="section-heading">Productos</h2>
+                            <p>Este modulo permite gestionar todos los clientes de la empresa. La información de correo es opcional pero la del telefono es obligatoria para poder comunicarte con el mismo.</p>
+                            <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-productos.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                        </section>
+                        <section class="docs-section" id="item-3-proyectos">
+                            <h2 class="section-heading">Proyectos</h2>
+                            <p>Módulo que gestiona los proyectos de la empresa. Cuando un usuario tiene el rol <b>&apos;Normal&apos; </b>solo podra ver los proyectos por él creados. En este módulo se podrá añadir , editar , actualizar y borrar los distintos proyectos.</p>
+                            <p>En <b>(1)</b> se dispone de controles para filtrar los proyectos por:<li>Proyectos en curso</li><li>Proyectos Finalizados</li><li>Proyectos rechazados</li><li>Todos los proyectos</li></p>
+                            <p>Cuando un proyecto se crea aparece con el estado de <b>INICIADO</b>. A partir de ese momento ya se puede crear el presupuesto pinchando en el <b>paso 2</b>.</p>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-proyectos.png" alt="Gestión de los proyectos">
+                            <p class="mt-5">En <b>(2)</b> tenemos los botones(de izq. a derecha) para:</p>
+                            <li>Aceptar un proyecto</li>
+                            <li>Rechazar un proyecto</li>
+                            <li>Finalizar un proyecto</li>
+                            <li>Y los clásico botones de editar y borrar.</li>
+                            <p>Para acceder a los presupuestos primero se debe seleccionar el proyecto y luego pulsar en el paso<b> 2 (presupuestos). </b>Tambien se puede hacer doble-click en el proyecto.</p>
+                            <section class="docs-section ms-5" id="item-3-proyectos-presupuestos">
+                                <h2 class="section-heading">Presupuestos</h2>
+                                <p>Este modulo permite crear, modificar y borrar presupuestos de un proyecto para un cliente.</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-proyecto-presupuesto.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                            </section>
+                            <section class="docs-section ms-5" id="item-3-proyectos-documentos">
+                                <h2 class="section-heading">Documentos</h2>
+                                <p>Este módulo permite gestionar los documentos de un proyecto. Se puede añadir realizando un &apos;copy &amp; paste&apos; de los ficheros desde el explorer.</p>
+                                <p>Cada documento se puede abrir, imprimir,enviar por correo o borrar. Cuando se abre un fichero se descarga&nbsp; temporalmente del servidor al cliente y aparece en la carpeta &apos;<b>Download</b>&apos;. El programa cliente dispone de una opcion de borrado de estos documentos descargados para realizar una limpieza y no se llene de documentos descargados.</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-proyectos-documentos.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                                <p class="mt-5">En este modulo podemos subir los ficheros asociados a los proyectos haciendo click con el ratón en el recuadro o bien mediaten &apos;arrastrar y soltar&apos; desde el explorer tal y como se muestra a continuación:</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-presupuestos-doc-dd.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                                <p>También hay disposición de otros iconos para abrir el documento,enviar por correo, imprimir o borrar.</p>
+                                <section class="docs-section ms-5" id="item-4-servicio">
+                                    <h2 class="section-heading">Envio por correo</h2>
+                                    <p>Para enviar por correo un documento o varios hay que pulsar el icono de &apos;<b>Enviar por correo</b>&apos;. Seguidamente aparece la siguiente ventana donde se puede introducir el destinatario de correo e introducir el texto del mensaje. Para enviarlo se debe pulsar el botón de <b>&apos;Enviar&apos;.</b></p>
+                                </section>
+                                <div class="text-center">
+                                    <img class="figure-img img-fluid rounded shadow" src="assets/images/Servidor/servidor-envio-correo.png" alt="Envio por correo electrónico">
+                                </div>
+                            </section>
+                            <section class="docs-section ms-5" id="item-3-proyectos-facturas">
+                                <h2 class="section-heading">Facturas</h2>
+                                <p>En este apartado aparecen las facturas y su estado. Las facturas se generan a partir del presupuesto base. Por eso, el documento que hay que modificar es el presupuesto en el paso 2. Cuando se tenga listo el presupuesto y se dé por aceptado ya se podrá generar la factura.</p>
+                                <p>Cuando una factura aparece pediente de generar y se pulsa el boton de <b>Generar Factura, </b>esa factura se da&nbsp;por válida y ya se la puede enviar al cliente o incluso modificar su presupuesto base en cuyo caso habrá que volver a generarla. Sin embargo, ya no se puede borrar y solo quedará&nbsp; <b>cerrarla </b>para que ingrese en la facturación. Si fuese necesario realizar una modificación posteriormente, hay 2 opciones crear una factura añadida modificando el presupuesto y seleccionando las lineas del cambio o crear una factura rectificativa pulsando el boton de <b>Rectificar factura</b>.</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-proyecto-factura.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                                <p class="mt-5">Otro tipo de factura que se puede crear es de <b>comisiones </b>que permite facturar a los distintos gremios que han realizado la obra como se muestra a continuación.</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-proyecto-factura-comision.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                            </section>
+                        </section>
+                        <section class="docs-section" id="item-3-calendario">
+                            <h2 class="section-heading">Calendario</h2>
+                            <p>Este modulo permite gestionar y anotar todos lo eventos de un usuario para un día y en un intervalo de horas. Estos eventos aparecerán en la página de inicio para que el usuario los pueda consultar. Tambien se notificará al usuario si así lo ha configurado en su interfaz o por correo indicando el mensaje y los contactos a los que quiere que llegue la notificación.</p>
+                            <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-calendario.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                        </section>
+                        <section class="docs-section" id="item-3-cobros">
+                            <h2 class="section-heading">Cobros</h2>
+                            <p>Este modulo permite los cobros de las facturas generadas en el aplicativo. Para ello hay que seleccionar el proyecto e introducir el pago realizado de cada factura del proyecto. Se indicará también el pago pendiente de la misma.</p>
+                            <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-cobros.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                        </section>
+                        <section class="docs-section" id="item-3-facturacion">
+                            <h2 class="section-heading">Facturación</h2>
+                            <p>Este apartadopermite concer la facturación en cuso realizada por el usuario hasta la fecha de hoy.</p>
+                            <video class="figure-img img-fluid shadow rounded" src="assets/images/Servidor/servidor-facturacion.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                        </section>
+                        <!--//section-->
+                    </article>
+                    <!--//docs-article-->
+                    <article class="docs-article" id="section-4">
+                        <header class="docs-header">
+                            <h1 class="docs-heading text-center">Programa Cliente</h1>
+                            <section class="docs-intro">
+                                <p>Este programa informa del estado del Servicio en el Servidor y permite acceder al aplicativo.&nbsp;</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Cliente/cliente_acceso_servidor.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                                <p>Este programa informa del estado del Servicio en el Servidor y permite acceder al aplicativo.&nbsp;</p>
+                            </section>
+                            <!--//docs-intro-->
+                        </header>
+                        <section class="docs-section" id="item-4-servidor">
+                            <section class="docs-section ms-5" id="item-4-servicio">
+                                <h2 class="section-heading">Descarga</h2>
+                                <p>Este apartado permite borrar los ficheros de descarga según la configuración que se muestra a continuación</p>
+                                <img class="figure-img img-fluid shadow rounded" src="assets/images/Cliente/cliente-descargas.png" alt="Borrado de los documento de descarga">
+                            </section>
+                            <h2 class="section-heading">Equipo Servidor</h2>
+                            <p>En el equipo Servidor el programa cliente tiene dispone de los módulos de <b>Servicio </b>para conocer el estado del servicio y <b>Restauración </b>que en el caso de se haya producido algún problema en la base de datos como en el disco donde se almacena la documentación, permitirá hacer la restauración.&nbsp;</p>
+                            <section class="docs-section ms-5" id="item-4-servicio">
+                                <h2 class="section-heading">Servicio</h2>
+                                <p>Este apartado permite conocer el estado del servicio. En caso de que el servicio no esté funcionando permitirá iniciarlo.</p>
+                                <img class="figure-img img-fluid shadow rounded" src="assets/images/Cliente/cliente-servicio.png" alt="Comprobación del servicio">
+                            </section>
+                            <section class="docs-section ms-5" id="item-4-servicio">
+                                <h2 class="section-heading">Restauración</h2>
+                                <p>Este apartado permite realizar una restauración de la base de datos y de los documentos generados en el aplicativo. Se dispondrá de la restauración en caso de que se configure el respaldo para realizarlo diariamente,semanalmente o mensualmente.&nbsp;</p>
+                                <video class="figure-img img-fluid shadow rounded" src="assets/images/Cliente/cliente-restauracion.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                            </section>
+                        </section>
+                        <!--//section-->
+                        <section class="docs-section" id="item-4-cliente">
+                            <h2 class="section-heading">Equipo Cliente ( carpeta respaldo)</h2>
+                            <p>En este apartado del cliente se va a poder seleccionar una carpeta donde se podra seleccionar desde la configuración del servidor para poder realizar el respaldo.</p>
+                            <video class="figure-img img-fluid shadow rounded" src="assets/images/Cliente/cliente-respaldo.mp4" controls type="video/mp4" preload="none">Your browser doesn't support HTML5 video tag.</video>
+                        </section>
+                        <!--//section-->
+                        <!--//section-->
+                    </article>
+                    <!--//docs-article-->
+                    <!--//docs-article-->
+                    <!--//docs-article-->
+                    <article class="docs-article" id="section-7">
+                        <header class="docs-header">
+                            <h1 class="docs-heading text-center">Preguntas más frecuentes</h1>
+                            <section class="docs-intro">
+                                <p>En esta sección aparecen las preguntas de los clientes que mas se pregunta.</p>
+                            </section>
+                            <!--//docs-intro-->
+                        </header>
+                        <section class="docs-section" id="item-7-1">
+                            <h2 class="section-heading" style="font-size: 21px;">¿Hay Presupuesto Plus en la nube?</h2>
+                            <p>Sí por supuesto. Se dispone de una versión Web accesible desde cualquier parte del mundo. Tiene las mismas características que la Web de oficina.</p>
+                            <p>La ventaja mas clara es que toda la información está en la nube por lo que se puede acceder desde cualquier ordenador o portatil con conexion a Internet. Esta versión dispone de un pequeño cliente que se instala en un ordenador de la oficina y que permite imprimir los documentos y tener un respaldo de todos los documentos generados en la nube.</p>
+                            <p>Solicite una prueba a Diensoft solicitando una <a href="https://presupuestoplus.azurewebsites.net/DienSoft/PresupuestoPlus/index.html#contact">licencia de pruebas.</a></p>
+                        </section>
+                        <!--//section-->
+                        <!--//section-->
+                        <!--//section-->
+                    </article>
+                    <!--//docs-article-->
+                    <!--//docs-article-->
+                    <!--//docs-article-->
+                    <footer class="footer">
+                        <div class="container text-center py-5">
+                            <small class="copyright">Diseñado por <span class="sr-only">love</span><i class="fas fa-gear" style="color: #fb866a;"></i> <a class="theme-link" href="https://presupuestoplus.azurewebsites.net/DienSoft" target="_blank">DienSoft</a></small>
+                            <ul class="social-list list-unstyled pt-4 mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-slack fa-fw"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
+                                </li>
+                            </ul>
+                            <!--//social-list-->
+                        </div>
+                    </footer>
+                </div>                 
+            </div>
+        </div>
+        <!--//docs-wrapper-->
+        <!-- Javascript -->         
+        <script src="assets/plugins/popper.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>         
+        <!-- Page Specific JS -->
+        <script src="assets/plugins/smoothscroll.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+        <script src="assets/js/highlight-custom.js"></script>         
+        <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>         
+        <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>         
+        <script src="assets/js/docs.js"></script>         
+    </body>
